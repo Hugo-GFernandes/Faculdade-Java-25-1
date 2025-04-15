@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -11,10 +12,11 @@ public class Main {
 
         for (i=0; i>0; i++)
         {
-            System.out.println
-                    ("Digite N para novo arquivo, A para abrir arquivo, " +
-                            "F para fechar arquivo e S para sair");
-            escolha = ler.nextLine();
+            System.out.println("N. Novo arquivo");
+            System.out.println("A. Novo arquivo");
+            System.out.println("F. fechar arquivo");
+            System.out.println("S. Sair");
+            escolha = ler.nextLine().toUpperCase(Locale.ROOT);
             if (escolha.equals("N"))
             {
                 System.out.println("Novo arquivo criado com sucesso");
